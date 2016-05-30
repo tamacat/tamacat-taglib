@@ -1,0 +1,7 @@
+Implementation-Title: tamacat-taglib
+Implementation-Version: 1.4-20160415
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.tamacat
+Bundle-Name: tamacat-taglib
+Bundle-Vendor: TAMACAT.ORG
+Bundle-Version: 1.4
