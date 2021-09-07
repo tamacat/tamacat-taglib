@@ -1,3 +1,7 @@
+/*
+ * Copyright 2015 tamacat.org
+ * All rights reserved.
+ */
 package org.tamacat.taglib;
 
 import java.io.UnsupportedEncodingException;

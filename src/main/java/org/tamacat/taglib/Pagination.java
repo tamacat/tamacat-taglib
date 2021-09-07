@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014 tamacat.org
+ * Copyright 2014 tamacat.org
  * All rights reserved.
  */
 package org.tamacat.taglib;

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 tamacat.org
+ * Copyright 2015 tamacat.org
  * All rights reserved.
  */
 package org.tamacat.taglib.input;
@@ -20,6 +20,7 @@ public class Checkbox extends Input {
 
 	private String label; // name of the checkbox label name
 	private String defaultValue;
+	protected String[] dValArray; // our multiple default values
 
 	public Checkbox() {
     	setType("checkbox");
@@ -45,6 +46,14 @@ public class Checkbox extends Input {
 				String value = attributes.get("value");
 				if (defaultValue.equals(value)) {
 					html.append(" checked=\"checked\"");
+				}
+			} else if (dValArray != null && dValArray.length >= 1) {
+				String value = attributes.get("value");
+				for (String dVal : dValArray) {
+					if (dVal != null && dVal.length()>=1 && dVal.equals(value)) {
+						html.append(" checked=\"checked\"");
+						break;
+					}
 				}
 			}
 			html.append(" />");
@@ -74,5 +83,13 @@ public class Checkbox extends Input {
 	
 	public void setDefault(String defaultValue) {
 		this.defaultValue = defaultValue;
+	}
+	
+	/**
+	 * @since 1.5
+	 * @param defaultValues
+	 */
+	public void setDefaults(String... defaultValues) {
+		this.dValArray = defaultValues;
 	}
 }
