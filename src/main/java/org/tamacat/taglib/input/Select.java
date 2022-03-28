@@ -150,11 +150,11 @@ public class Select extends TagSupport {
 		dVal = x;
 	}
 
-	public void setDefaults(String[] x) {
+	public void setDefaults(String... x) {
 		dValArray = x;
 	}
 
-	public void setDefaults(Map<String, String> x) {
+	public void setDefaultsMap(Map<String, String> x) {
 		dValArray = new String[x.size()];
 		Iterator<?> it = x.keySet().iterator();
 		int i = 0;
@@ -163,7 +163,7 @@ public class Select extends TagSupport {
 		}
 	}
 
-	public void setDefaults(Collection<String> c) {
+	public void setDefaultsList(Collection<String> c) {
 		dValArray = new String[c.size()];
 		Iterator<String> it = c.iterator();
 		int i = 0;
