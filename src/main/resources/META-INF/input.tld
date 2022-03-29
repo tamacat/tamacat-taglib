@@ -317,16 +317,6 @@
       <required>false</required>
       <rtexprvalue>true</rtexprvalue>
     </attribute>
-    <attribute>
-      <name>defaultsMap</name>
-      <required>false</required>
-      <rtexprvalue>true</rtexprvalue>
-    </attribute>
-    <attribute>
-      <name>defaultsList</name>
-      <required>false</required>
-      <rtexprvalue>true</rtexprvalue>
-    </attribute>
   </tag> 
   
   <tag>
@@ -596,6 +586,16 @@
     </attribute>
     <attribute>
       <name>defaults</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>defaultsMap</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>defaultsList</name>
       <required>false</required>
       <rtexprvalue>true</rtexprvalue>
     </attribute>
